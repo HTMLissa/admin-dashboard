@@ -89,15 +89,15 @@ input[type="search"] {
   height: 30px;
   border-radius: 20px;
   border: none;
-  background-color: #8338ec;
+  background-color: #fb5607;
   color: white;
   transition: 0.3s all ease-in-out;
 }
 
 .action-section button:hover {
-  color: #8338ec;
+  color: #fb5607;
   background-color: white;
-  border: 1px solid #8338ec;
+  border: 1px solid #fb5607;
 }
 
 .sidebar {
