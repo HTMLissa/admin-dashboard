@@ -1,13 +1,103 @@
 body {
+  font-family: "Aleo", serif;
+  font-family: "Signika Negative", sans-serif;
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 4fr;
 }
 
 .header {
-  border: 1px solid red;
+  box-shadow: 1px 7px 8px 1px rgba(159, 159, 159, 0.75);
+  -webkit-box-shadow: 1px 7px 8px 1px rgba(159, 159, 159, 0.75);
+  -moz-box-shadow: 1px 7px 8px 1px rgba(159, 159, 159, 0.75);
   grid-column: 2;
   grid-row: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header form {
+  display: flex;
+  margin-left: 20px;
+}
+
+input[type="search"] {
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(226, 226, 226);
+  margin-left: 10px;
+  flex: 1;
+}
+
+.profile-img {
+  border-radius: 30px;
+}
+
+.header .account-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.header .account-overview p {
+  display: inline;
+}
+
+.header .account-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  margin-right: 40px;
+}
+
+.greeting-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.account-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px 40px 20px 20px;
+}
+
+.account-header p:first-child {
+  font-size: 0.8rem;
+}
+
+.account-header p {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.username {
+  font-weight: 700;
+}
+
+.action-section {
+  align-self: center;
+  justify-self: self-end;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.action-section button {
+  width: 80px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: #8338ec;
+  color: white;
+  transition: 0.3s all ease-in-out;
+}
+
+.action-section button:hover {
+  color: #8338ec;
+  background-color: white;
+  border: 1px solid #8338ec;
 }
 
 .sidebar {

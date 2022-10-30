@@ -7,9 +7,56 @@
     <title>Admin Dashboard</title>
     <!-- CSS stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Signika+Negative:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class="header">Header</header>
+    <header class="header">
+      <div class="account-overview">
+        <form action="" method="get" id="search-form">
+          <img src="icons/magnify.svg" alt="magnifying glass" width="25px" />
+          <input type="search" name="search" id="search-field" />
+        </form>
+        <div class="account-icons">
+          <img
+            src="icons/bell-ring-outline.svg"
+            alt="ringing bell"
+            width="25px"
+          />
+          <img
+            src="images/profile-img.svg"
+            alt="profile image"
+            width="40px"
+            class="profile-img"
+          />
+          <p class="username">Melissa Malekpour</p>
+        </div>
+      </div>
+      <div class="account-header">
+        <div class="greeting-wrapper">
+          <img
+            src="images/profile-img.svg"
+            alt="profile image"
+            width="55px"
+            class="profile-img"
+          />
+          <div class="greeting-section">
+            <p>Hi there,</p>
+            <p class="username">Melissa Malekpour</p>
+          </div>
+        </div>
+        <div class="action-section">
+          <button class="action-btn">New</button>
+          <button class="action-btn">Upload</button>
+          <button class="action-btn">Share</button>
+        </div>
+      </div>
+    </header>
     <div class="sidebar">Sidebar</div>
     <main class="main">Main</main>
   </body>
